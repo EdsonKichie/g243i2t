@@ -1,11 +1,11 @@
 const btnLogin = document.querySelector("#btnLogin");
 const inputUsuario = document.querySelector("#usuario");
 const inputSenha = document.querySelector("#senha");
-let usuarioSalvo = null;
+let usuarioLogado = null;
 
 (() => {
-    usuarioSalvo = localStorage.getItem("usuario");
-    if (usuarioSalvo) {
+    usuarioLogado = localStorage.getItem("usuario");
+    if (usuarioLogado) {
         window.location.href = "/home/aluno/Downloads/g243i2t-main/logado.html";
     }
 })();

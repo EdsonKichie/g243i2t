@@ -14,10 +14,14 @@
     <section class="pagina-login">
         <div class="login">
             <form action="" class="form-login">
-                <label for="usuario">Usuário</label>
-                <input id="usuario" type="text" name="usuario">
-                <label for="senha">Senha</label>
-                <input id="senha" type="password" name="senha">
+                <div class="campo-input">
+                    <input id="usuario" type="text" name="usuario" required>
+                    <label for="usuario">Usuário</label>
+                </div>
+                <div class="campo-input">
+                    <input id="senha" type="password" name="senha" required>
+                    <label for="senha">Senha</label>
+                </div>
 
                 <button id="btnLogin" type="submit">Validar</button>
                 <a href="esqueci.html">Esqueci a Senha</a>
