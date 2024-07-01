@@ -6,7 +6,7 @@ let usuarioLogado = null;
 (() => {
     usuarioLogado = localStorage.getItem("usuario");
     if (usuarioLogado) {
-        window.location.href = "/home/aluno/Downloads/g243i2t-main/logado.html";
+        window.location.href = "logado.html";
     }
 })();
 
@@ -15,13 +15,14 @@ btnLogin.onclick = (e) => {
     let usuario = inputUsuario.value;
     let senha = inputSenha.value;
     if (usuario) {
-        if (usuario === "user") {
+        if (usuario === "raul") {
             if (senha === "123") {
                 localStorage.setItem("usuario", usuario);
-                window.location.href = "/home/aluno/Downloads/g243i2t-main/logado.html";
+                window.location.href = "logado.html";
             }
         } else {
             inputUsuario.focus();
         }
     }
 }
+
